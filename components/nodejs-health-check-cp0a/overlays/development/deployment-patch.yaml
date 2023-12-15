@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-cp0a
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-pdkl-tenant/e2e-nodejs/nodejs-health-check-cp0a@sha256:df73345214f5eb8a238dcb0918c2cb6ad178d5ec3cbdde6b233c73424d9d4b3b
+        name: my-nodejs
+        resources: {}
+status: {}
