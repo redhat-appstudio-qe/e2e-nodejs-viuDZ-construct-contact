@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-tzne
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-pdkl-tenant/e2e-nodejs/nodejs-health-check-tzne@sha256:c16dd107778727514e9d1248b3ca402b9f515c3d003a1942d5678c887a927d16
+        name: my-nodejs
+        resources: {}
+status: {}
